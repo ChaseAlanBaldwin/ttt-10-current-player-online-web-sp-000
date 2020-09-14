@@ -1,9 +1,9 @@
 def turn_count(board)
-  turns = 9
   i = 0
 
-  while i != turns do
-    i += 1
+  board.each do |turns|
+    if board(turns) == 'X' || board(turns) == 'O'
+      i += 1
+    end
   end
-
 end
